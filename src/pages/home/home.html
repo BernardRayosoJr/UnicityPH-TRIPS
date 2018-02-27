@@ -1,14 +1,44 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="unicity">
     <ion-title>
-      Ionic Blank
+     Unicity Seminars
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding  class="card-background-page">
+
+   
+
+          <ion-card text-center (click)="openPage('tokyo')">
+            <img src="assets/imgs/trips_img/tokyo.jpg"/>
+            <div class="card-title" text-wrap>Tokyo</div>
+            <div class="card-subtitle" text-wrap>Unicity Leadership Seminar 2018</div>
+            <button style="background-color:#DA050B" class="card-button"  text-wrap ion-button  full >Click to Calculate Tokyo Points</button>
+          </ion-card>
+          
+
+          <ion-card text-center (click)="openPage('korea')">
+              <img src="assets/imgs/trips_img/koreaGLIC.jpg"/>
+              <div class="card-title" text-wrap>Korea</div>
+              <div class="card-subtitle" text-wrap>Global Leadership and Innovation Conference 2019</div>
+              <button  style="background-color:#003F96" class="card-button" text-wrap ion-button  full >Watch Teaser Video</button>
+             
+          </ion-card>
+    
+          <ion-card text-center (click)="openPage('maldives')"> 
+            <img src="assets/imgs/trips_img/maldives.jpg"/>
+            <div class="card-title" text-wrap>Maldives</div>
+            <div class="card-subtitle" text-wrap>Unicity Leadership Seminar 2018</div>
+            <button  style="background-color:#00ACC1" class="card-button" text-wrap ion-button  full >Click to Calculate Maldives Points</button>
+           
+           
+          </ion-card>
+     
+       
+
+                
+         
+       
+  
 </ion-content>

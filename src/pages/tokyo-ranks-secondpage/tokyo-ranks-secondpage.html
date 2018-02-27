@@ -1,0 +1,195 @@
+<!--
+  Generated template for the TokyoRanksSecondpagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="unicity">
+        <ion-title>Tokyo Points Commision</ion-title>
+        <ion-buttons right #refresh>
+                <button *ngIf="isResetShow" ion-button icon-only (click)="reload()" [disabled]="thirdRank == null ||  secondRank == null || firstRank == null || fourthRank == null " >
+                        <ion-icon name="refresh"></ion-icon>         
+                </button>
+        </ion-buttons>
+    
+      </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+   
+       
+    <ion-label text-wrap class="selectHeader" text-center  >Select your ranks based on the months provided.</ion-label >
+
+    
+
+      <ion-list #firstRankLst>
+
+              <ion-col>
+                      <ion-title> Base Rank: <span  style="color:red" >{{baseRankString}}</span></ion-title>
+              </ion-col>
+      
+       
+            <ion-list-header >
+              Months of February-May
+            </ion-list-header>
+            <ion-item>
+               <ion-label>February</ion-label>
+                <ion-select required [(ngModel)]="firstRank"  (ionChange)='getFirstRank(firstRank)' >
+                    <ion-option value="0">No Rank</ion-option>
+                    <ion-option value="1">Manager</ion-option>
+                    <ion-option value="2">Senior Manager</ion-option>
+                    <ion-option value="3">Director</ion-option>
+                    <ion-option value="4">Senior Director</ion-option>
+                    <ion-option value="5">Executive Director</ion-option>
+                    <ion-option value="6">Presidential Director</ion-option>
+                    <ion-option value="7">Presidential Sapphire</ion-option>
+                    <ion-option value="8">Presidential Ruby</ion-option>
+                    <ion-option  value="9">Presidential Diamond</ion-option>
+  
+                </ion-select>
+            </ion-item>
+  
+            <ion-item>
+                <ion-label >March</ion-label>
+                 <ion-select  required [(ngModel)]="secondRank" (ionChange)='getSecondRank(secondRank)'>
+                     <ion-option value="0">No Rank</ion-option>
+                     <ion-option value="1">Manager</ion-option>
+                     <ion-option value="2">Senior Manager</ion-option>
+                     <ion-option value="3">Director</ion-option>
+                     <ion-option value="4">Senior Director</ion-option>
+                     <ion-option value="5">Executive Director</ion-option>
+                     <ion-option value="6">Presidential Director</ion-option>
+                     <ion-option value="7">Presidential Sapphire</ion-option>
+                     <ion-option value="8">Presidential Ruby</ion-option>
+                     <ion-option  value="9">Presidential Diamond</ion-option>
+   
+                 </ion-select>
+             </ion-item>
+             
+  
+             <ion-item text-wrap>
+                <ion-label text-wrap >April</ion-label>
+                 <ion-select text-wrap required [(ngModel)]="thirdRank" (ionChange)=' getThirdRank(thirdRank)' >
+                     <ion-option value="0">No Rank</ion-option>
+                     <ion-option value="1">Manager</ion-option>
+                     <ion-option value="2">Senior Manager</ion-option>
+                     <ion-option value="3">Director</ion-option>
+                     <ion-option value="4">Senior Director</ion-option>
+                     <ion-option value="5">Executive Director</ion-option>
+                     <ion-option value="6">Presidential Director</ion-option>
+                     <ion-option value="7">Presidential Sapphire</ion-option>
+                     <ion-option value="8">Presidential Ruby</ion-option>
+                     <ion-option  text-wrap value="9">Presidential Diamond</ion-option>
+   
+                 </ion-select>
+             </ion-item>
+
+             <ion-item text-wrap>
+              <ion-label text-wrap >May</ion-label>
+               <ion-select text-wrap required [(ngModel)]="fourthRank" (ionChange)=' getFourthRank(fourthRank)' >
+                   <ion-option value="0">No Rank</ion-option>
+                   <ion-option value="1">Manager</ion-option>
+                   <ion-option value="2">Senior Manager</ion-option>
+                   <ion-option value="3">Director</ion-option>
+                   <ion-option value="4">Senior Director</ion-option>
+                   <ion-option value="5">Executive Director</ion-option>
+                   <ion-option value="6">Presidential Director</ion-option>
+                   <ion-option value="7">Presidential Sapphire</ion-option>
+                   <ion-option value="8">Presidential Ruby</ion-option>
+                   <ion-option  text-wrap value="9">Presidential Diamond</ion-option>
+ 
+               </ion-select>
+           </ion-item>
+        </ion-list> 
+
+
+          <ion-list>
+                  <ion-list-header>
+                          Points Breakdown
+                  </ion-list-header>
+            
+                  <ion-item>
+                          February 
+                          <ion-note item-end>
+                          {{this.firstTotalPoints}} Points
+                          </ion-note>
+                  </ion-item>
+                  <ion-item>
+                          March 
+                          <ion-note item-end>
+                          {{this.secondTotalPoints}} Points
+                          </ion-note>
+                  </ion-item>
+                  <ion-item>
+                           April 
+                          <ion-note item-end>
+                          {{this.thirdTotalPoints}} Points
+                          </ion-note>
+                  </ion-item>
+
+                  <ion-item>
+                           May 
+                     <ion-note item-end>
+                     {{this.fourthTotalPoints}} Points
+                     </ion-note>
+                  </ion-item>
+
+          </ion-list>
+          <div id="hr"> </div>  
+          
+          
+  <ion-row  >
+      <ion-col style="background-color:#FFFDE7; border: 0.55px solid #f82424cc;" col-12>
+           <ion-list  no-lines  text-wrap>
+                    <ion-list-header text-wrap style="background-color:#FFFDE7; color:rgba(110, 110, 110, 0.8);  border-top : 1px solid #aaa; border-bottom: 1px solid #aaa; font-style: italic; font-size: 14px !important;">
+                      *Remark
+                     </ion-list-header>
+                                     
+      <ion-item style="background-color:#FFFDE7; font-size: 15px; color:rgba(110, 110, 110, 0.8);">
+         <ul style="padding-left: 15px !important;  ">
+            <li>For <span  style="color:red; font-weight: 400;">Senior Director Ranks and above,</span> distributors must maintain at least <span  style="color:red; font-weight: 400;">600 TV</span> in order to accumulate points for that particular month.</li>
+            <li>All distributors must maintain at least <span  style="color:red; font-weight: 400;">150 PV</span>, starting from the 1st month that they accumulate points until the end of qualification period.</li>
+            <li>Distributors must maintain <span  style="color:red; font-weight: 400;">“Active Status” (100 PV) </span>after the qualification ends until the trip period.</li>
+                
+          </ul>
+      </ion-item>
+          </ion-list>
+   </ion-col>
+  </ion-row>
+  
+  <div id="hr"> </div>      
+    
+    <ion-row  text-center>
+            
+                
+              <ion-col>
+                     <ion-title>Points Accumulated: <span  style="color:red" >{{totalPoints}}</span></ion-title>
+              </ion-col>
+    </ion-row>
+  
+    <ion-row text-center>
+           <ion-col>
+             <ion-title>Free Total Package: <span  style="color:red" >{{totalPackage}}</span></ion-title>
+            </ion-col>
+
+    </ion-row> 
+</ion-content>
+
+
+
+<ion-footer>
+    <ion-row text-center >
+             <ion-col >
+                    <button ion-button  icon-end (click)="returnHome()"  block  color="unicity">
+                        Return to Home
+                        <ion-icon name="home"></ion-icon>
+                    </button>
+            </ion-col>  
+          </ion-row>
+</ion-footer>

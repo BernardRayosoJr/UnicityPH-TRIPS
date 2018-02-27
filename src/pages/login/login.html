@@ -1,0 +1,57 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+</ion-header>
+
+<ion-content class="login-content" padding>
+
+  <ion-row class="logo-row">
+      <ion-col col-3></ion-col>
+      <ion-col col-6>
+        <img src="assets/imgs/logo_unicity.png">
+      </ion-col>
+      <ion-col col-3></ion-col>
+
+  </ion-row>
+
+  <div class="login-box">
+      <form (ngSubmit)="login(registerForm)" #registerForm="ngForm">
+          <ion-row>
+            <ion-col>
+              <ion-list inset>
+                
+                <ion-item>
+                    <ion-icon  item-right name="person"></ion-icon> 
+                    <ion-input clearInput ="true" pattern="[0-9]*" type="number" placeholder="BA-ID" name="username"  ngModel required></ion-input>
+                 </ion-item>
+                
+                <ion-item>
+                    <ion-icon  item-right name="eye"></ion-icon> 
+                  <ion-input clearInput ="true"  type="password" placeholder="Password" name="password" ngModel required></ion-input>
+                </ion-item>
+                
+              </ion-list>
+            </ion-col>
+          </ion-row>
+          
+          
+          <ion-row>
+            <ion-col class="signup-col">
+              <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.valid"  >Login</button>
+             
+            </ion-col>
+          </ion-row>
+          
+        </form>
+  </div>
+
+</ion-content>
+
+<ion-footer text-center class="footerLbl">
+    <ion-label  >© {{year_str}} Copyright Unicity Philippines, Inc. <br> All Rights Reserved.</ion-label>
+    
+</ion-footer>
