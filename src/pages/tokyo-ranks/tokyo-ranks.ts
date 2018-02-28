@@ -93,6 +93,10 @@ export class TokyoRanksPage {
      }
         
       switch(this.baseRank) {
+        case "0":
+        this.baseRankString = "No Rank";
+        break;
+
         case "1":
             this.baseRankString = "Manager";
             break;
@@ -127,11 +131,11 @@ export class TokyoRanksPage {
       console.log("baserank "+ this.baseRank);
       console.log("baserank title "+  this.baseRankString);
     
-      if (this.baseRank < 3) {
+    //   if (this.baseRank < 3) {
     
-        this.baseRankString = "No Rank";
+    //     this.baseRankString = "No Rank";
     
-      }
+    //   }
         loading.dismiss();
       }, 1000);
     

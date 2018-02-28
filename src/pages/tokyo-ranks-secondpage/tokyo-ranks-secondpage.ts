@@ -46,12 +46,13 @@ export class TokyoRanksSecondpagePage implements OnInit {
     this.isResetShow = false;
     this.totalPackage = 0;
     console.log(this.baseRankString);
-    if (this.baseRank < 3) {
-      this.baseRank = 0;
-    }
-    else {
+    // if (this.baseRank < 3) {
+    //   this.baseRank = 0;
+    // }
+    // else {
+    // this.baseRank = this.navParams.get('ranks');
+    // }
     this.baseRank = this.navParams.get('ranks');
-    }
     console.log("BaseRank ------> ",this.baseRank );
   }
 
@@ -74,6 +75,36 @@ export class TokyoRanksSecondpagePage implements OnInit {
 }
 
 
+getRank(rankdiff){
+
+  if (rankdiff == 0) {
+    this.RankAdvancementArray = ["0"];
+    console.log(this.RankAdvancementArray);
+ }
+
+ if (rankdiff == 1) {
+  this.RankAdvancementArray.splice(2,8);
+  console.log(this.RankAdvancementArray);
+}
+
+
+  if (rankdiff == 2) {
+  this.RankAdvancementArray.splice(3,8);
+  console.log(this.RankAdvancementArray);
+  }
+
+  if (rankdiff == 3) {
+  this.RankAdvancementArray.splice(4,8);
+  console.log(this.RankAdvancementArray);
+  } 
+
+  if (rankdiff == 4) {
+    this.RankAdvancementArray.splice(5,8);
+    console.log(this.RankAdvancementArray);
+    } 
+
+}
+
 // Get First Rank of the month
 
 getFirstRank(firstRank) {
@@ -86,74 +117,74 @@ getFirstRank(firstRank) {
   console.log("firstRank difference"+rankdiff);
 
 
-  if (this.baseRank < 3) {   
+//   if (this.baseRank < 0) {   
 
-  this.RankAdvancementArray = ["0","6","7","9","9","10","10","10","10"]
+//   this.RankAdvancementArray = ["0","6","7","9","9","10","10","10","10"]
  
-  if (rankdiff == 0) {
-    this.RankAdvancementArray = ["0"];
-    console.log(this.RankAdvancementArray);
-  }
+//   if (rankdiff == 0) {
+//     this.RankAdvancementArray = ["0"];
+//     console.log(this.RankAdvancementArray);
+//   }
 
 
 
-  if (rankdiff == 1) {
-    this.RankAdvancementArray.splice(1,8);
-    console.log(this.RankAdvancementArray);
-  }
+//   if (rankdiff == 1) {
+//     this.RankAdvancementArray.splice(1,8);
+//     console.log(this.RankAdvancementArray);
+//   }
 
-  if (rankdiff == 2) {
-    this.RankAdvancementArray.splice(2,8);
-    console.log(this.RankAdvancementArray);
-  }
+//   if (rankdiff == 2) {
+//     this.RankAdvancementArray.splice(2,8);
+//     console.log(this.RankAdvancementArray);
+//   }
 
-  if (rankdiff == 3) {
-    this.RankAdvancementArray.splice(3,8);
-    console.log(this.RankAdvancementArray);
-  }
+//   if (rankdiff == 3) {
+//     this.RankAdvancementArray.splice(3,8);
+//     console.log(this.RankAdvancementArray);
+//   }
 
-  if (rankdiff == 4) {
-    this.RankAdvancementArray.splice(4,8);
-    console.log(this.RankAdvancementArray);
-  }
+//   if (rankdiff == 4) {
+//     this.RankAdvancementArray.splice(4,8);
+//     console.log(this.RankAdvancementArray);
+//   }
 
-  if (rankdiff == 5) {
-    this.RankAdvancementArray.splice(5,8);
-    console.log(this.RankAdvancementArray);
-  }
+//   if (rankdiff == 5) {
+//     this.RankAdvancementArray.splice(5,8);
+//     console.log(this.RankAdvancementArray);
+//   }
 
-  if (rankdiff == 6) {
-    this.RankAdvancementArray.splice(6,8);
-    console.log(this.RankAdvancementArray);
-  }
+//   if (rankdiff == 6) {
+//     this.RankAdvancementArray.splice(6,8);
+//     console.log(this.RankAdvancementArray);
+//   }
 
 
-  if (rankdiff == 7) {
-    this.RankAdvancementArray.splice(7,8);
-    console.log(this.RankAdvancementArray);
-  }
+//   if (rankdiff == 7) {
+//     this.RankAdvancementArray.splice(7,8);
+//     console.log(this.RankAdvancementArray);
+//   }
 
-  if (rankdiff == 8) {
-    this.RankAdvancementArray.splice(8,8);
-    console.log(this.RankAdvancementArray);
-  }
+//   if (rankdiff == 8) {
+//     this.RankAdvancementArray.splice(8,8);
+//     console.log(this.RankAdvancementArray);
+//   }
 
-  for (var i=0;i<this.RankAdvancementArray.length; i++) {
+//   for (var i=0;i<this.RankAdvancementArray.length; i++) {
 
-  if(isNaN(parseInt(this.RankAdvancementArray[i]))){
-  continue;
-  }
-  this.firstTotalPoints +=  parseInt(this.RankAdvancementArray[i]);
+//   if(isNaN(parseInt(this.RankAdvancementArray[i]))){
+//   continue;
+//   }
+//   this.firstTotalPoints +=  parseInt(this.RankAdvancementArray[i]);
     
-  }
-  console.log(this.firstTotalPoints);
-  //  this.Total.push(String(this.firstTotalPoints));
-  this.computePoints();
-  this.computePackage();
-  return this.firstTotalPoints;
-}
+//   }
+//   console.log(this.firstTotalPoints);
+//   //  this.Total.push(String(this.firstTotalPoints));
+//   this.computePoints();
+//   this.computePackage();
+//   return this.firstTotalPoints;
+// }
 
-  else {
+  // else {
 
   this.RankAdvancementArray = ["0","6","7","9","9","10","10","10","10"]
 
@@ -161,36 +192,84 @@ getFirstRank(firstRank) {
  
   //  RESET TO 0
   if (this.firstRank == 0) {
-    
-      this.RankAdvancementArray =  ["0"];
-      console.log(this.RankAdvancementArray);
-  }
-
-  //  SENIOR MANAGER
-  if (this.firstRank == 1) {
 
   this.RankAdvancementArray =  ["0"];
-  console.log(this.RankAdvancementArray);
   }
+  
+
+
+  //  MANAGER
+  if (this.firstRank == 1) {
+
+    switch(this.baseRank) {
+      case "0": 
+      case "1":
+      //  Manager
+      this.RankAdvancementArray = ["0"];
+      break;  
+      default:
+      this.RankAdvancementArray =  ["0"];
+    }
+    console.log(this.RankAdvancementArray);
+  }
+
+
   //  SENIOR MANAGER
   if (this.firstRank == 2) {
 
-  this.RankAdvancementArray =  ["0"];
-  console.log(this.RankAdvancementArray);
+  
+    switch(this.baseRank) {
+      case "0":
+      //  No Rank
+      this.RankAdvancementArray = ["0","6"];
+      break;  
+
+      case "1":
+      //  Manager
+      this.RankAdvancementArray = ["6"];
+      break;  
+  
+      case "2":
+      //  Senior Manager
+      this.RankAdvancementArray = ["0"];
+      break;  
+      default:
+      this.RankAdvancementArray =  ["0"];
+    }
+    console.log(this.RankAdvancementArray);
+
 }
 
   // DIRECTOR
   if (this.firstRank == 3) {
 
-  switch(this.baseRank) {
-  case "3":
-  //  DIRECTOR
-  this.RankAdvancementArray = ["0"];
-  break;  
-  default:
-  this.RankAdvancementArray =  ["0"];
-  }
-  console.log(this.RankAdvancementArray);
+    switch(this.baseRank) {
+
+
+      case "0":
+      //  No Rank
+      this.RankAdvancementArray = ["0","6","7"];
+      break;  
+
+      case "1":
+      //  Manager
+      this.RankAdvancementArray = ["6","7"];
+      break;  
+  
+      case "2":
+      //  Senior Manager
+      this.RankAdvancementArray = ["7"];
+     
+      break;  
+      case "3":
+      //  Director
+     this.RankAdvancementArray = ["0"];
+    break;  
+  
+    default:
+    this.RankAdvancementArray =  ["0"];
+    }
+    console.log(this.RankAdvancementArray);
 
 }
 
@@ -198,10 +277,27 @@ getFirstRank(firstRank) {
   if (this.firstRank == 4) {
 
   switch(this.baseRank) {
-  case "3":
-  //  DIRECTOR
-  this.RankAdvancementArray = ["9"];
-  break;  
+
+    case "0":
+    //  No Rank
+    this.RankAdvancementArray = ["0","6","7","9"];
+    break;  
+
+    case "1":
+    //  Manager
+    this.RankAdvancementArray = ["6","7","9"];
+    break;
+
+    case "2":
+    //  SENIOR Manager
+    this.RankAdvancementArray = ["7","9"];
+   
+    break;  
+    case "3":
+    //  DIRECTOR
+   this.RankAdvancementArray = ["9"];
+    break;  
+
   case "4":
   //  SENIOR DIRECTOR
   this.RankAdvancementArray = ["2.5"];
@@ -219,10 +315,27 @@ getFirstRank(firstRank) {
 
   console.log(this.firstRank);
   switch(this.baseRank) {
-  case "3":
-  //  DIRECTOR
-  this.RankAdvancementArray = ["9","9"]
-  break;  
+
+    case "0":
+    //  No Rank
+    this.RankAdvancementArray = ["0","6","7","9","9"];
+    break;  
+
+    case "1":
+    //  Manager
+    this.RankAdvancementArray = ["6","7","9","9"];
+    break;
+
+    case "2":
+    //  SENIOR Manager
+    this.RankAdvancementArray = ["7","9","9"];
+   
+    break;  
+    case "3":
+    //  DIRECTOR
+   this.RankAdvancementArray = ["9","9"];
+    break;  
+
   case "4":
   //  SENIOR DIRECTOR
   this.RankAdvancementArray = ["9"]
@@ -240,12 +353,30 @@ getFirstRank(firstRank) {
 }
   //  PRESIDENTIAL  DIRECTOR
   if (this.firstRank == 6) {
+
   console.log(this.firstRank);
   switch(this.baseRank) {
-  case "3":
-  //  DIRECTOR
-  this.RankAdvancementArray = ["9","9","10"]
-  break;
+
+    case "0":
+    //  No Rank
+    this.RankAdvancementArray = ["0","6","7","9","9","10"];
+    break;  
+
+    case "1":
+    //  Manager
+    this.RankAdvancementArray = ["6","7","9","9","10"];
+    break;
+
+    case "2":
+    //  SENIOR Manager
+    this.RankAdvancementArray = ["7","9","9","10"];
+    break;
+
+    case "3":
+    //  DIRECTOR
+   this.RankAdvancementArray = ["9","9","10"];
+    break;  
+
   case "4":
   //  SENIOR  DIRECTOR
   this.RankAdvancementArray = ["9","10"]
@@ -268,9 +399,26 @@ getFirstRank(firstRank) {
 
   //  PRESIDENTIAL SAPPHIRE
   if (this.firstRank == 7) {
+    
 
   console.log(this.firstRank);
   switch(this.baseRank) {
+
+    case "0":
+    //  No Rank
+    this.RankAdvancementArray = ["0","6","7","9","9","10","10"];
+    break;  
+
+    case "1":
+    //  Manager
+    this.RankAdvancementArray = ["6","7","9","9","10","10"];
+    break;
+
+    case "2":
+    //  SENIOR Manager
+    this.RankAdvancementArray = ["7","9","9","10","10"];
+    break;
+
   case "3":
   //  DIRECTOR
   this.RankAdvancementArray = ["9","9","10","10"]
@@ -304,6 +452,22 @@ getFirstRank(firstRank) {
   
   console.log(this.firstRank);
   switch(this.baseRank) {
+
+    case "0":
+    //  No Rank
+    this.RankAdvancementArray = ["0","6","7","9","9","10","10","10"];
+    break;  
+
+    case "1":
+    //  Manager
+    this.RankAdvancementArray = ["6","7","9","9","10","10","10"];
+    break;
+
+    case "2":
+    //  SENIOR Manager
+    this.RankAdvancementArray = ["7","9","9","10","10","10"];
+    break;
+
   case "3":
   //  DIRECTOR
   this.RankAdvancementArray = ["9","9","10","10","10"]
@@ -340,7 +504,23 @@ getFirstRank(firstRank) {
   //  PRESIDENTIAL DIAMOND
   if (this.firstRank == 9) {
   console.log(this.firstRank);
+
   switch(this.baseRank) {
+    case "0":
+    //  No Rank
+    this.RankAdvancementArray = ["0","6","7","9","9","10","10","10","10"];
+    break;  
+
+    case "1": 
+    //  Manager
+    this.RankAdvancementArray = ["6","7","9","9","10","10","10","10"];
+    break;
+
+    case "2":
+    //  SENIOR Manager
+    this.RankAdvancementArray = ["7","9","9","10","10","10","10"];
+    break;
+
   case "3":
   //  DIRECTOR
   this.RankAdvancementArray = ["9","9","10","10","10","10"]
@@ -372,6 +552,7 @@ getFirstRank(firstRank) {
   default:
   this.RankAdvancementArray =  ["0"];
   }
+
   console.log(this.baseRank);
   console.log(this.RankAdvancementArray);
   
@@ -389,7 +570,7 @@ getFirstRank(firstRank) {
   this.computePoints();
   this.computePackage();
   return this.firstTotalPoints;
-    }
+    // }
  }
 
 
@@ -419,11 +600,39 @@ getFirstRank(firstRank) {
       console.log(this.RankAdvancementArray);
   }
 
+   //  MANAGER
+   if (this.secondRank == 1) {
 
-  // MANAGER
-  if (this.secondRank == 1) {
-  this.RankAdvancementArray = ["0"];
-  }
+        if (this.baseRank > this.firstRank)
+        {
+        console.log("base rank is higher than first rank");
+           newSbaseRank =  this.baseRank;
+        }
+        
+        else {
+           newSbaseRank =  this.firstRank;
+        }
+
+
+        switch(String(newSbaseRank)) {
+          case "0":
+          //  Manager
+          this.RankAdvancementArray = ["0"];
+          break;  
+
+          case "1":
+          //  Manager
+          this.RankAdvancementArray = ["0"];
+          break;  
+          default:
+          this.RankAdvancementArray =  ["0"];
+        }
+
+
+          console.log(this.RankAdvancementArray);
+  }
+
+
   
   // SENIOR MANAGER
   if (this.secondRank == 2) { 
@@ -432,7 +641,7 @@ getFirstRank(firstRank) {
     if (this.baseRank > this.firstRank)
      {
      console.log("base rank is higher than first rank");
-    newSbaseRank =  this.baseRank;
+     newSbaseRank =  this.baseRank;
      }
       
      else {
@@ -440,7 +649,10 @@ getFirstRank(firstRank) {
      }
   
   switch(String(newSbaseRank)) {
-  case "0":
+  case "0": 
+    this.RankAdvancementArray = ["0","6"];
+  
+  break;
   case "1":
   // MANAGER
   this.RankAdvancementArray = ["0","6"];
@@ -1111,11 +1323,6 @@ getFirstRank(firstRank) {
 
    // secondRank  RESET TO 0
 
-
- 
-
-
-
     if (this.thirdRank == 0) {
        
    this.RankAdvancementArray =  ["0"];
@@ -1124,12 +1331,55 @@ getFirstRank(firstRank) {
 
     // MANAGER
     if (this.thirdRank == 1) {
-           this.RankAdvancementArray = ["0"];
+
+
+      if (this.baseRank > this.secondRank)
+      {
+         console.log("base rank is higher than 2nd rank");
+         newSbaseRank =  this.baseRank;
+      }
+      
+      else if (this.firstRank >= this.baseRank && this.firstRank >= this.secondRank) {
+       console.log("base rank is firstRank");
+       newSbaseRank = this.firstRank
+       }
+      else if (this.secondRank >= this.baseRank  &&  this.secondRank >= this.firstRank) {
+       console.log("base rank is secondRank");
+         newSbaseRank = this.secondRank
+       }
+ 
+      else {
+         newSbaseRank =  this.secondRank;
+ 
+      } 
+
+
+
+
+      switch(String(newSbaseRank)) {
+        case "0":
+        //  Manager
+    
+        this.RankAdvancementArray = ["0"];
+        break;  
+
+        case "1":
+        //  Manager
+      
+        this.RankAdvancementArray = ["0"];
+        break;  
+        default:
+       
+        this.RankAdvancementArray = ["0"];
+      }
+
+      
+
+
+
     }
 
-
-// -------------     // SENIOR MANAGER
-
+   // -------------     // SENIOR MANAGER
 
     if (this.thirdRank == 2) {
     // BASE RANK
@@ -1154,32 +1404,6 @@ getFirstRank(firstRank) {
        newSbaseRank =  this.secondRank;
 
     } 
-
- //    if (this.firstRank >= this.secondRank && this.firstRank >= this.thirdRank) {
- //     console.log("base rank is firstRank");
- //     newSbaseRank =  this.firstRank;
- 
- //   }
- 
- //  else if (this.secondRank >= this.firstRank && this.secondRank >= this.thirdRank) {
- //     console.log("base rank is secondRank");
- //     newSbaseRank =  this.secondRank;
- 
- //   }
- 
- //   else if (this.thirdRank >= this.secondRank && this.thirdRank >= this.firstRank) {
- //     console.log("base rank is thirdRank");
- //     newSbaseRank =  this.thirdRank;
- 
- //   }
- 
- //    else {
- //    newSbaseRank =  this.thirdRank;
- 
- //   } 
-
-    
-    
 
     console.log("YOUR NEW BASE RANK IS ======>   ",newSbaseRank )
 
@@ -1236,8 +1460,8 @@ getFirstRank(firstRank) {
 
 
     switch(String(newSbaseRank)) {
-    case "1":
-    case "0":  
+    case "0":
+    case "1":  
     //  Manager
     if (this.baseRank == this.thirdRank) {
      this.RankAdvancementArray = ["0"];
@@ -1250,8 +1474,6 @@ getFirstRank(firstRank) {
     else {
       this.RankAdvancementArray = ["6","7"];
     }
-   
-    
     break;  
     case "2":
     //  SM
