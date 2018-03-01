@@ -1,5 +1,5 @@
 page-home {
-    
+
     .card-background-page {
     
       ion-card {
@@ -10,17 +10,17 @@ page-home {
       .card-title {
         position: absolute;
         background:rgba(97,97,97 ,.7);
-        
-        top: 44%;
-        font-size: 2.0em;
+
+        font-size: 5.0em !important;
+        top: 50% !important;
         width: 100%;
         font-weight: bold;
         color: #fff;
       }
     
       .card-subtitle {
-        font-size: 1.0em;
-        background:rgba(97,97,97 ,.7);
+        font-size: 5.5em !important;
+        background:rgba(97,97,97 ,1);
         position: absolute;
         top: 66%;
         width: 100%;
@@ -31,11 +31,904 @@ page-home {
         position: absolute;
         width: 100%;
         top: 75%;
+        font-size: 2.0em;
+        padding: 3%;
        
 
       }
+      .scroll-content {
+        padding: 0px !important;
+    }
 
     }
+  
+
+}
+
+
+// iPhone X in portrait 
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { 
+
+  page-home {
+  .card-background-page {
     
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+  
+    .card-title {
+      position: absolute;
+      background:rgba(97,97,97 ,.7);
+      
+      top: 44% !important;
+      font-size: 2.0em !important;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+  
+    .card-subtitle {
+      font-size: 1.0em !important;
+      background:rgba(97,97,97 ,1);
+      position: absolute;
+      top: 66%;
+      width: 100%;
+      color: #fff;
     }
     
+    .card-button {
+      position: absolute;
+      width: 100%;
+      top: 75%;
+      font-size: 1.0em !important;
+
+     
+
+    }
+    .scroll-content {
+      padding: 0px !important;
+    }
+  }
+}
+
+}
+
+
+
+
+
+// iPhone X in portrait 
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) { 
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.8);
+        
+        top: 60% !important;
+        font-size: 2.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.5em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 69%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 1.4em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+  
+
+}
+
+
+
+
+
+//  iPhone 6, 7, & 8 in portrait 
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px)
+and (orientation : portrait) { 
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.7);
+        
+        top: 44% !important;
+        font-size: 2.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 1.0em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+}
+
+
+//  iPhone 6, 7, & 8 in landscape
+
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) 
+and (orientation : landscape) { 
+
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.8);
+        
+        top: 55% !important;
+        font-size: 2.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.5em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 1.4em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
+// iPhone 6, 7, & 8 Plus in portrait
+@media only screen 
+and (min-width : 414px) 
+and (max-width : 736px)
+and (orientation : portrait) { 
+
+
+  
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.7);
+        
+        top: 44% !important;
+        font-size: 2.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 1.0em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+}
+
+
+
+
+// iPhone 6, 7, & 8 Plus in landscape 
+
+@media only screen 
+and (min-width : 414px) 
+and (max-width : 736px)
+and (orientation : landscape) { 
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.8);
+        
+        top: 55% !important;
+        font-size: 2.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.5em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 1.4em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+}
+
+
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.7);
+        
+        top: 44% !important;
+        font-size: 2.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 1.0em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+}
+
+
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) { 
+
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.7);
+        
+        top: 44% !important;
+        font-size: 2.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 1.0em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+}
+
+
+// iPad in landscape
+
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : landscape) { 
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.8);
+        
+        top: 57% !important;
+        font-size: 3.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 2.3em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 68%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 2.3em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+}
+
+// iPad in portrait
+
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait) {
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.7);
+        
+        top: 53% !important;
+        font-size: 3.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 2.0em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 2.0em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+
+ }
+
+
+//  Retina iPad in landscape
+ @media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.8);
+        
+        top: 57% !important;
+        font-size: 3.3em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 2.3em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 68%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 2.3em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+}
+
+// Retina iPad in portrait
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.7);
+        
+        top: 53% !important;
+        font-size: 3.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 2.0em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 2.0em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+ }
+
+//  IPad 1 & 2 in landscape
+ @media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  {
+
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.8);
+        
+        top: 57% !important;
+        font-size: 3.0em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 2.3em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 68%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 2.3em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+}
+
+
+// iPad 1 & 2 in portrait
+
+
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.7);
+        
+        top: 53% !important;
+        font-size: 2.7em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 2.0em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 66%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 2.0em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+}
+
+
+
+@media only screen 
+and (min-width : 1024px) 
+and (max-width : 1366px) 
+and (orientation : portrait) 
+
+{ 
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.7);
+        
+        top: 57% !important;
+        font-size: 3.4em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 2.3em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 68%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 2.0em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+ }
+
+
+
+@media only screen 
+and (min-width : 1024px) 
+and (max-width : 1366px) 
+and (orientation : landscape) 
+
+
+
+{ 
+
+
+  page-home {
+    .card-background-page {
+      
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        background:rgba(97,97,97 ,.7);
+        
+        top: 56% !important;
+        font-size: 3.3em !important;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 2.3em !important;
+        background:rgba(97,97,97 ,1);
+        position: absolute;
+        top: 67%;
+        width: 100%;
+        color: #fff;
+      }
+      
+      .card-button {
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        font-size: 2.3em !important;
+  
+       
+  
+      }
+      .scroll-content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+ }
+
+
+
+
